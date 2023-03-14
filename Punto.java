@@ -2,8 +2,8 @@ package PrimerasClases;
 
 public class Punto {
 	//variables=atributos
-	int coordX;
-	int coordY;
+	private int coordX;
+	private int coordY;
 	
 	//constructor
 	public Punto(int nuevaCoordX, int nuevaCoordY){
@@ -12,9 +12,18 @@ public class Punto {
 	}
 	
 	//métodos
-	float devuelveDistanciaOrigen(){
+	double devuelveDistanciaOrigen(){
 		double distancia;
 		distancia=Math.sqrt(coordX*coordX+coordY*coordY);
-		return();
+		return(distancia);
+		
 	}
+	//Métodos setter&getter:
+	//Método set: Sirve para fijar el valor de un atributo
+	
+	void setCoordX(int nuevoCoordX){
+		coordX=nuevoCoordX;
+	}
+	
+	
 }
